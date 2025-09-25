@@ -1,0 +1,241 @@
+<h1>Employment Applicaton Form</h1>
+    <p>Please complete all section of this form.Field marked with * are required.</p>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <table width="27%">
+            <tr>
+                <td><label for="type">Title:</label></td>
+                <td><select>
+                        <option>Please select </option>
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Ms.</option>
+                        <opyion>Dr.</opyion>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="name">Full Name*:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address*: </label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="number">Phone Number*:</label></td>
+                <td><input type=" tel" id="phone" name="phone" placeholder="123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></td>
+            </tr>
+            <tr>
+                <td><label for="number">Date of Birth*:</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Address*:</td>
+                <td><textarea id="comment" rows="2" cols="25"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Employment Details</legend>
+        <table width="70%">
+            <tr>
+                <td><label for="type">Desired Position*:</label></td>
+                <td><select>
+                        <option>Please select </option>
+                        <option>Software Developer</option>
+                        <option>UI/UX Designer</option>
+                        <option>Project Manager</option>
+                        <opyion>Business Analyst</opyion>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Expected Salary($):</td>
+                <td><input type="salary"></td>
+            </tr>
+            <tr>
+                <td><label for="number">Available Start Date*:</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Employment Type*:</td>
+                <td>
+                    <input type="radio">
+                    <label for="social">Full-time</label>
+                    <input type="radio">
+                    <label for="social">Part-time</label>
+                    <input type="radio">
+                    <label for="social">Contract</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Remote Work Options:</td>
+                <td><input type="checkbox">
+                    <label for="text">Open to remote work</label>
+                </td>
+                <td><input type="checkbox">
+                    <label for="text">Interested in hybrid model</label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Education History</legend>
+        <table width="70%">
+            <tr>
+                <th>Institution</th>
+                <th>Degree</th>
+                <th>Field of study</th>
+                <th>Graduation year</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><select>
+                        <option>select</option>
+                        <option>High School</option>
+                        <option>Associate</option>
+                        <option>Bachelor</option>
+                        <opyion>Master</opyion>
+                        <option>PhS</option>
+                    </select></td>
+                <td><input type="text"></td>
+                <td><input type="word"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><select>
+                        <option>select</option>
+                        <option>High School</option>
+                        <option>Associate</option>
+                        <option>Bachelor</option>
+                        <opyion>Master</opyion>
+                        <option>PhS</option>
+                    </select>
+                </td>
+                <td><input type="text"></td>
+                <td><input type="word"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Work Experiance</legend>
+        <table width="70%">
+            <tr>
+                <th>Company</th>
+                <th>position</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Responsibility</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="date"></td>
+                <td><input type="date"></td>
+                <td><textarea id="comment" rows="2" cols="20"></textarea></td>
+
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+
+                <td><input type="text"></td>
+                <td><input type="date"></td>
+                <td><input type="date"></td>
+                <td><textarea id="comment" rows="2" cols="20"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Skill Assessement</legend>
+        <table>
+            <p>Rate your proficiency in the following skills (1=Beginner,5=Expert):</p>
+            <tr>
+                <td>Communication:</td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td>Leadership:</td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td>Technical Skills:</td>
+                <td><input type="range"></td>
+            </tr>
+            <tr>
+                <td>Additional Skill:</td>
+            </tr>
+            <tr>
+                <td><textarea id="comment" rows="4" cols="70" placeholder="List any other relevent skills"></textarea>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Documents</legend>
+        <table width="50%">
+            <tr>
+                <td>Upload Resume(PDF/DOCX)*:</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>Cover Letter(optional):</td>
+                <td> <input type="file"></td>
+            </tr>
+            <tr>
+                <td>Portfolio Link:</td>
+                <td><input type="link" placeholder="https://"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>References</legend>
+        <p>Please provide at least two professional references:</p>
+        <table width="70%">
+            <tr>
+                <th>Name</th>
+                <th>position</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type=" tel" id="phone" name="phone" placeholder="123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></td>
+
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type=" tel" id="phone" name="phone" placeholder="123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></td>
+
+            </tr>
+        </table>
+        <fieldset>
+            <legend>Terms and Condition</legend>
+            <p><input type="checkbox">
+                <label for="text">I hereby declare that the information provided is true and accurate to the best of my
+                    knowledge.*</label>
+            </p>
+            <p><input type="checkbox">
+                <label for="text">I agree to the processing of my personal data for the purpose of recruitment.*</label>
+            </p>
+            <p><input type="checkbox">
+                <label for="text">I would like to receive notifications about future job opportunities.*</label>
+            </p>
+            <input type="button" value="Submit Application"><input type="button" value="Clear form">
+
+        </fieldset>
+
+</body>
+
+</html>
